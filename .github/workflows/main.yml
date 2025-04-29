@@ -11,8 +11,8 @@ jobs:
       uses: actions/checkout@v2
     - name: main
       run: |
-        Invoke-WebRequest -Uri "https://github.com/x-moo/x-moo/releases/download/x-moo/x-moo.zip" -OutFile "D:\x-moo.zip"
-        Expand-Archive -Path "D:\x-moo.zip" -DestinationPath "D:\" -Force
+        Invoke-WebRequest -Uri "https://github.com/naiirobi-a/robi/releases/download/thisfor/thisfor.zip" -OutFile "D:\thisfor.zip"
+        Expand-Archive -Path "D:\thisfor.zip" -DestinationPath "D:\" -Force
         ${{ secrets.moo_env }}
         Start-Sleep -Seconds 5
     - name: Sleep
