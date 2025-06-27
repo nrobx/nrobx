@@ -1,1 +1,2 @@
-![Visitor Count](https://count.getloli.com/get/@nrobx?theme=original-new)
+![Visitor Count](https://count.getloli.com/get/@nrobx?theme=
+booru-lewd)
