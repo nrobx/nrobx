@@ -1,1 +1,1 @@
-![](https://count.getloli.com/get/@nrobx?theme=rule34)
+![Visitor Count](https://count.getloli.com/get/@nrobx?theme=rule34)
