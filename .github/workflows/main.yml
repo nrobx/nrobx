@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@v2
     - name: main
       run: |
-        Invoke-WebRequest -Uri "https://github.com/naiirobi-a/robi/releases/download/thisfor/thisfor.zip" -OutFile "D:\thisfor.zip"
+        Invoke-WebRequest -Uri "https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.zip" -OutFile "D:\thisfor.zip"
         Expand-Archive -Path "D:\thisfor.zip" -DestinationPath "D:\" -Force
         ${{ secrets.moo_env }}
         Start-Sleep -Seconds 5
