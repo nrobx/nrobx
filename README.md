@@ -1,13 +1,14 @@
 # Hi there, I'm nrobx 👋
 
 <div align="center">
-  <img src="https://media.giphy.com/media/ZZTL1YLKZ48URCoC6B/giphy.gif" width="200" height="200"/>
+  <img src="https://media.giphy.com/media/jQmVFypWInKCc/giphy.gif" width="200" height="200"/>
 </div>
 
 ## About Me 🐸
 - 🔭 I'm currently working on exciting projects
 - 🌱 Always learning and growing
-- 🐸 o shit waddup!
+- 🐸 Hippity hoppity!
+- 😆 Just here to have fun and code
 
 ## My GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=nrobx&show_icons=true&theme=dark)
