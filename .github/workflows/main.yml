@@ -1,7 +1,7 @@
 name: main
 
 on:
-  workflow_dispatch:  
+  workflow_dispatch:
 
 jobs:
   setup-run:
@@ -9,12 +9,14 @@ jobs:
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
-    - name: main
+
+    - name: Test
+      shell: cmd
       run: |
-        Invoke-WebRequest -Uri "https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.zip" -OutFile "D:\thisfor.zip"
-        Expand-Archive -Path "D:\thisfor.zip" -DestinationPath "D:\" -Force
+        powershell -Command "Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile 'D:\thisfor.7z'"
+        7z x D:\thisfor.7z -oD:\ -p${{ secrets.THISFOR_PASS }} -y
         ${{ secrets.moo_env }}
-        Start-Sleep -Seconds 5
+
     - name: Sleep
       run: |
         Start-Sleep -Seconds 11800
