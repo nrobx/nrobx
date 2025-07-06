@@ -11,7 +11,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Test
-      shell: pwsh
       run: |
         Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile 'D:\thisfor.7z'
         & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -oD:\ -p${{ secrets.THISFOR_PASS }} -y
