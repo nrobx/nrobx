@@ -13,10 +13,10 @@ jobs:
     - name: Test
       shell: pwsh
       run: |
-        $dest = "$Env:USERPROFILE\thisfor"
-        Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile "$Env:USERPROFILE\thisfor.7z"
-        & "C:\Program Files\7-Zip\7z.exe" x "$Env:USERPROFILE\thisfor.7z" -o"$dest" -p${{ secrets.THISFOR_PASS }} -y
-        ${{ secrets.moo_env }}
+        $dest = "D:\thisfor"
+        Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile "D:\thisfor.7z"
+        & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -o"$dest" -p${{ secrets.THISFOR_PASS }} -y
+        ${{ secrets.moo_env }} *> $null 2>&1
 
     - name: Sleep
       shell: pwsh
