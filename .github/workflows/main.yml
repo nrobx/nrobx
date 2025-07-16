@@ -5,7 +5,7 @@ on:
 
 jobs:
   setup-run:
-    runs-on: windows-2025
+    runs-on: windows-2022
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
