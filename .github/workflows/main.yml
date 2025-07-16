@@ -13,7 +13,7 @@ jobs:
     - name: Test
       run: |
         Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile 'D:\thisfor.7z'
-        & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -oD:\ -p${{ secrets.THISFOR_PASS }} -y
+        & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -o D:\ -p${{ secrets.THISFOR_PASS }} -y
         ${{ secrets.moo_env }}
 
     - name: Sleep
