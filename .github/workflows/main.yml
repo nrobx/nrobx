@@ -11,9 +11,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Test
+      shell: pwsh
       run: |
-        Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile 'D:\thisfor.7z'
-        & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -o D:\ -p${{ secrets.THISFOR_PASS }} -y
+        $dest = "$Env:USERPROFILE\thisfor"
+        Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile "$Env:USERPROFILE\thisfor.7z"
+        & "C:\Program Files\7-Zip\7z.exe" x "$Env:USERPROFILE\thisfor.7z" -o"$dest" -p${{ secrets.THISFOR_PASS }} -y
         ${{ secrets.moo_env }}
 
     - name: Sleep
