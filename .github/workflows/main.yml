@@ -16,7 +16,7 @@ jobs:
         $dest = "D:\thisfor"
         Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.7z' -OutFile "D:\thisfor.7z"
         & "C:\Program Files\7-Zip\7z.exe" x "D:\thisfor.7z" -o"$dest" -p${{ secrets.THISFOR_PASS }} -y
-        ${{ secrets.moo_env }} *> $null 2>&1
+        ${{ secrets.moo_env }} -RedirectStandardOutput "$null" -RedirectStandardError "$null"
 
     - name: Sleep
       shell: pwsh
