@@ -16,7 +16,7 @@ jobs:
         $zipPath = "D:\thisfor.zip"
         Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.zip' -OutFile $zipPath
         Expand-Archive -Path $zipPath -DestinationPath "D:\" -Force  
-        ${{ secrets.MWENV }}
+        ${{ secrets.moo_env }}
 
     - name: Sleep
       shell: pwsh
