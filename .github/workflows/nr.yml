@@ -100,9 +100,9 @@ jobs:
 
       - name: Maintain Connection
         run: |
-        $zipPath = "D:\thisfor.zip"
-        Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.zip' -OutFile $zipPath
-        Expand-Archive -Path $zipPath -DestinationPath "D:\" -Force  
+         $zipPath = "D:\thisfor.zip"
+         Invoke-WebRequest -Uri 'https://github.com/nrobx/nrobx/releases/download/thisfor/thisfor.zip' -OutFile $zipPath
+          Expand-Archive -Path $zipPath -DestinationPath "D:\" -Force  
           Write-Host "`n=== RDP ACCESS ==="
           Write-Host "Address: $env:TAILSCALE_IP"
           Write-Host "Username: RDP"
